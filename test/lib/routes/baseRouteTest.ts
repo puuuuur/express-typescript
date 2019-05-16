@@ -5,7 +5,7 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 describe('baseRoute', () => {
-    it('should respond with HTTP 200 status', () => {
+    it('Erhält auf der Base Route den erwarteten Response', () => {
         return chai.request(app)
             .get('/')
             .then(res => {
