@@ -1,3 +1,5 @@
+'use-strict'
+
 import express from 'express';
 import * as bodyParser from 'body-parser';
 import { RouteController } from './routes/routeController';

@@ -1,10 +1,13 @@
+'use-strict'
+
 import app from './app';
+import config from 'config';
 
-const PORT: number = 3000;
+let port: number = config.has('service.port') ? config.get('service.port') : 3000;
 
-app.listen (PORT, (err: Error) => {
+app.listen (port, (err: Error) => {
     if (err) {
         console.log(err);
     }
-    console.log('Express server listening on port: ' + PORT);
+    console.log(`Express server listening on port: ${port}`);
 });

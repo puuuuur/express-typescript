@@ -63,3 +63,7 @@ typings/
 #typescript
 
 dist/
+
+#config
+
+default.json
